@@ -1,7 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .frame{
     width: 100%;
-    background-color: #e5e5e5;
     height: 100vh;
+    
 }
 
 .main_frame{
@@ -10,7 +16,7 @@
     flex-direction: row;
     align-items: center;
     margin-top: 2px;
-    background-color: #f7f6b9;
+    background-color: #F0F0F6;
 }
 /* Left frame */
 .main_frame .left_frame{
@@ -53,6 +59,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .prof_links .prof_link{
@@ -61,24 +68,163 @@
     width: 25px;
     height: 23px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
+.left2 .inform{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
+.left2 .inform h4{
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #FFB400;
+    padding: 5px;
+}
 
+.process .process_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
 
+.process .process_input{
+    border: 0.5px solid #FFB400;
+    width: 100%;
+    height: 5px;
+    padding: 0.2px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.process_input span{
+    display: block;
+    height: 80%;
+    width: 85%;
+    background-color: #FFB400;
+}
+
+.left5 .skill{ 
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.skill p{
+    color: #767676;
+    font-size: 15px;
+    margin-left: 16px;
+}
+
+.main_btn{
+    width: 220px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB400;
+    font-weight: 600;
+    color: #4F4F4F;
+    border: none;
+    cursor: pointer;
+}
+
+/* Middle frame */
 
 .main_frame .middle_frame{
     width: 970px;
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 30px;
     height: 1315px;
+}
+
+.middle_frame .middle_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 467px;
+    background-color: white;
 
 }
+
+.middle_top > div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.middle_top .top_left{
+    padding-left: 50px;
+    display: block;
+}
+
+.top_left h1{
+    font-size: 48px;
+    color: #2B2B2B;
+}
+
+.top_left p{
+    color: #767676;
+    line-height: 24px;
+    margin: 24px 0;
+}
+
+.middle_bottom{
+    margin-top: 100px;
+    text-align: center;
+}
+.service > p {
+    line-height: 24px;
+    color: #767676;
+    margin: 20px 0;
+}
+
+.middle_bottom .service_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.service_cards .service_card{
+    background-color: white;
+    width: 32%;
+    padding:40px 30px ;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.service_card h3{
+    font-size: 18px;
+    color: #2B2B2B;
+    margin: 12px 0;
+}
+
+.service_card a{
+    color: #FFB400;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+
+/* Right frame */
 
 .main_frame .right_frame{
     width: 108px;
@@ -87,6 +233,29 @@
     flex-direction: column;
     align-items: center;
     height: 1315px;
+    padding-top: 50px;
+}
 
+.right_frame .right_menu{
+    margin-top: 190px;
+}
+.right_frame .contrast img{
+    cursor: pointer;
+}
+
+.right_menu .menu_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F0F0F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.right_menu .menu_icon:hover{
+    background-color: #FFB400;
 }
 
