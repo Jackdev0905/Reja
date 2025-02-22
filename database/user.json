@@ -1,5 +1,11 @@
 {
     "name": "Steve",
     "profession": "Software Engineer",
-    "age": 20
+    "age": 24,
+    "residence":"South Korea",
+    "address":"Busan, South Korea",
+    "languages":{"Uzbek": 100, "Korean": 70, "English": 80},
+    "skills":{},
+    "work_place": "IT Company",
+    "service_cards":[]
 }
