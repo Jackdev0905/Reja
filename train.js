@@ -32,6 +32,7 @@ console.log("passed 1");
 
 // async function
 
+/*
 async function maslahatBering(a){
     if(typeof a !== 'number') throw new Error("Iltimos, raqam kiriting")
     else if( a <= 20) return list[0];
@@ -64,3 +65,25 @@ async function run(){
 run()
 
 console.log("passed 1");
+*/
+
+// MITASK
+
+function count(word, letter){
+    // first option
+
+    let num = 0;
+    // for(let i=0; i < word.length; i++){
+    //     if(word[i] === letter) num++;
+    // };
+
+
+    // second
+    word.split("").map((ele) =>{
+        if(ele === letter) num++;
+    })
+    return num;
+
+}
+
+console.log((count("elvetor", "e")));
