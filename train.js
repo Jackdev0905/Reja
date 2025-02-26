@@ -1,4 +1,4 @@
-console.log("Maslahatlar");
+// console.log("Maslahatlar");
 
 const list = [
     "yaxshi talaba bo'ling", //0-20
@@ -102,3 +102,29 @@ function countDigits(word){
     return num;
 }
 console.log(countDigits("79shj3hjb4b"));
+
+
+// C-TASK
+function checkContent(a, b){
+    const arr1 = a.split("").sort()
+    const arr2 = b.split("").sort()
+    console.log(arr1, arr2);
+    arr1.map((ele, i)=>{
+        if(ele === arr1[i+1]) arr1.splice(i,1);
+    })
+    console.log("==========");
+
+    arr2.map((ele, i)=>{
+        if(ele === arr2[i+1]) arr2.splice(i,1);
+    })
+    console.log(arr1, arr2);
+    if(arr1.length === arr2.length) {
+        for(let i=0; i<arr2.length; i++){
+            if(arr1[i] !== arr2[i]) return false;
+        }
+        return true;
+    }
+    else return false;
+}
+
+console.log(checkContent("mitgrouppoh", "gmtiprou"))
