@@ -69,6 +69,7 @@ console.log("passed 1");
 
 // MITASK
 
+/* A task
 function count(word, letter){
     // first option
 
@@ -87,3 +88,17 @@ function count(word, letter){
 }
 
 console.log((count("elvetor", "e")));
+
+*/
+
+
+// B TASK
+
+function countDigits(word){
+    let num = 0;
+    word.split("").map((ele) =>{
+        if(ele >= '0' && ele <= '9') num++;
+    })
+    return num;
+}
+console.log(countDigits("79shj3hjb4b"));
