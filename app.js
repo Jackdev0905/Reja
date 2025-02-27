@@ -13,7 +13,7 @@ fs.readFile("database/user.json", "utf-8", (err, data)=>{
     }
 })
 */
-
+const mongodb = require("mongodb")
 
 // 1 Entry
 app.use(express.static("public"));
@@ -26,6 +26,8 @@ app.use(express.urlencoded({extended:true}));
 app.set("views", "views");
 app.set("view engine", "ejs");
 
+
+
 // 4 Routing code
 app.post("/create-item", (req, res) => {
     console.log("user entered /create-item");
@@ -37,16 +39,17 @@ app.post("/create-item", (req, res) => {
     }, (err, data) => {
       console.log(data.ops);
       res.json(data.ops[0]);
-      
-      // if (err) {
-      //   console.log(err);
-      //   res.end("something went wrong");
-      // } else {
-      //   res.end("plan inserted successfully");
-      // };
     });
   
   });
+
+  app.post("/delete-item", (req, res)=>{
+    const id= req.body.id;
+    
+    db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id)}, function(err, data){
+      res.json({state: "success"})
+    })
+  })
 
 app.get("/", (req, res) => {
     console.log("user entered /");
