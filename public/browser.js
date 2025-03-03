@@ -44,6 +44,7 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
 
 
 document.addEventListener("click", function(e){
+    console.log(e);
     
     if(e.target.classList.contains("delete-me")){
         if(confirm("Aniq o'chirmoqchimisiz?")){
