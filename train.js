@@ -1,38 +1,48 @@
-// D-TASK
-const moment = require("moment")
-class Shop{
-
-    constructor(non, lagmon, cola){
-        this.non = non;
-        this.lagmon = lagmon;
-        this.cola = cola;
-    }
-
-    qoldiq(){
-        console.log("Hozir ", moment().format("HH:mm"), "da");
-        console.log(`${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`);
-        
-    }
-    sotish(product, miqdor){
-        if(product == 'non') this.non -= miqdor;
-        else if(product == 'lagmon') this.lagmon -= miqdor;
-        else if(product == 'cola') this.cola -= miqdor;
-        else console.log(product, "mavjud emas!");
-
-    }
-    qabul(product, miqdor){
-        if(product == 'non') this.non += miqdor;
-        else if(product == 'lagmon') this.lagmon += miqdor;
-        else if(product == 'cola') this.cola += miqdor;
-        else console.log("Bunday mahsulot mavjud emas!");
-    }
+// E-TASK
+function getReverse(str) {
+    return str.split("").reverse().join("");
 }
-const shop = new Shop(4,5,2);
-shop.qoldiq();
+console.log(getReverse("hello"));
+ 
 
-shop.sotish('kabob', 3);
-shop.qabul('non', 4);
-shop.qoldiq();
+
+
+
+// D-TASK
+// const moment = require("moment")
+// class Shop{
+
+//     constructor(non, lagmon, cola){
+//         this.non = non;
+//         this.lagmon = lagmon;
+//         this.cola = cola;
+//     }
+
+//     qoldiq(){
+//         console.log("Hozir ", moment().format("HH:mm"), "da");
+//         console.log(`${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud!`);
+        
+//     }
+//     sotish(product, miqdor){
+//         if(product == 'non') this.non -= miqdor;
+//         else if(product == 'lagmon') this.lagmon -= miqdor;
+//         else if(product == 'cola') this.cola -= miqdor;
+//         else console.log(product, "mavjud emas!");
+
+//     }
+//     qabul(product, miqdor){
+//         if(product == 'non') this.non += miqdor;
+//         else if(product == 'lagmon') this.lagmon += miqdor;
+//         else if(product == 'cola') this.cola += miqdor;
+//         else console.log("Bunday mahsulot mavjud emas!");
+//     }
+// }
+// const shop = new Shop(4,5,2);
+// shop.qoldiq();
+
+// shop.sotish('kabob', 3);
+// shop.qabul('non', 4);
+// shop.qoldiq();
 
 
 // C-TASK
