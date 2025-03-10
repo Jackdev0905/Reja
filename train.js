@@ -1,8 +1,17 @@
-// E-TASK
-function getReverse(str) {
-    return str.split("").reverse().join("");
+// F-TASK
+const findDoublers = (str)=>{
+    const sortedArr = str.split("").sort();
+    return sortedArr.some((e, i) => e === sortedArr[i + 1]);
 }
-console.log(getReverse("hello"));
+console.log(findDoublers("albatta"));
+
+ 
+
+// E-TASK
+// function getReverse(str) {
+//     return str.split("").reverse().join("");
+// }
+// console.log(getReverse("hello"));
  
 
 
